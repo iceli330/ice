@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wepice Store</title>
+    <style>
+        body { 
+            background-color: #2e3440; 
+            color: #d8dee9; 
+            font-family: sans-serif; 
+            margin: 0; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        header { 
+            background-color: #3b4252; 
+            width: 100%; 
+            padding: 30px 0; 
+            text-align: center; 
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        header h1 { 
+            margin: 0; 
+            font-size: 1.8rem; 
+            color: #88c0d0; 
+            letter-spacing: 2px;
+        }
+        .shop-container { 
+            display: flex; 
+            flex-wrap: wrap; 
+            justify-content: center; 
+            gap: 25px; 
+            padding: 40px 20px; 
+            max-width: 1000px;
+        }
+        .item-card { 
+            background-color: #434c5e; 
+            border-radius: 12px; 
+            padding: 20px; 
+            width: 220px; 
+            text-align: center; 
+            transition: all 0.3s ease;
+        }
+        .item-card:hover { 
+            transform: translateY(-8px);
+            background-color: #4c566a;
+        }
+        .game-logo { 
+            width: 80px; 
+            height: 80px; 
+            border-radius: 50%; 
+            margin-bottom: 15px; 
+            border: 3px solid #4c566a;
+        }
+        .package-name { 
+            font-size: 1.1rem; 
+            font-weight: 600; 
+            margin: 10px 0;
+            color: #eceff4;
+        }
+        .package-price { 
+            font-size: 1rem; 
+            color: #a3be8c; 
+            margin-bottom: 20px; 
+        }
+        .buy-btn { 
+            background-color: #81a1c1; 
+            color: #2e3440; 
+            border: none; 
+            padding: 10px 20px; 
+            font-weight: bold; 
+            border-radius: 6px; 
+            cursor: pointer;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WEPICE STORE</h1>
+        <p style="color: #abb2bf; font-size: 0.9rem;">Premium Game Topup Service</p>
+    </header>
+    <div class="shop-container">
+        <div class="item-card">
+            <img src="https://images.rbxcdn.com/cece577579c986c478c903a48e89f825.jpg" class="game-logo">
+            <div class="package-name">Roblox Robux</div>
+            <div class="package-price">800 Robux</div>
+            <button class="buy-btn">Top Up</button>
+        </div>
+        <div class="item-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_pB6yS-g2G_X2309fO0fG6M9n7V-A1eA0sw&s" class="game-logo">
+            <div class="package-name">Free Fire</div>
+            <div class="package-price">520 Diamonds</div>
+            <button class="buy-btn">Top Up</button>
+        </div>
+        <div class="item-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6V-U0I_LwS9fT5z9V_O5h2Z5V_M0J_V_M0J_V_M0" class="game-logo">
+            <div class="package-name">FIFA Mobile</div>
+            <div class="package-price">1,050 FC Points</div>
+            <button class="buy-btn">Top Up</button>
+        </div>
+    </div>
+</body>
+</html>
